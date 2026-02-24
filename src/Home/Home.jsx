@@ -3,6 +3,7 @@ import "./Home.css"
 import { NavLink } from 'react-router-dom'
 import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
+import headerbgimg from "../assets/Group 2.png"
 
 const Home = () => {
     return (
@@ -27,6 +28,18 @@ const Home = () => {
                     </div>
                 </div>
             </nav>
+            <header>
+                <div className="header-box" style={{ backgroundImage: `url(${headerbgimg})` }}>
+                    <div className="header-box-texts">
+                        <h1>Experience the road like never before</h1>
+                        <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper</p>
+                        <button>View all cars</button>
+                    </div>
+                    <div className="header-box-register">
+                        <h1>Book your car</h1>
+                    </div>
+                </div>
+            </header>
         </div>
     )
 }

@@ -5,9 +5,9 @@ import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
 
 const Details = () => {
-  return (
-    <div>
-      <nav>
+    return (
+        <div>
+            <nav>
                 <div className="nav-logo">
                     <img src={logo} alt="" />
                     <p>Car Rental </p>
@@ -27,8 +27,8 @@ const Details = () => {
                     </div>
                 </div>
             </nav>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Details

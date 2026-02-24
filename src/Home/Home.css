@@ -80,3 +80,81 @@ nav {
     font-weight: 600;
     margin-top: -15px;
 }
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-box {
+    display: flex;
+    gap: 74px;
+}
+
+
+.header-box {
+    width: 1296px;
+    height: 660px;
+    border-radius: 40px;
+    background-color: #5937E0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 72px;
+}
+
+
+.header-box-texts {
+    margin-top: 168px;
+}
+
+
+.header-box-texts h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    width: 600px;
+}
+
+
+.header-box-texts p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 380px;
+    color: white;
+    margin-top: 27px;
+}
+
+
+.header-box-texts button {
+    width: 164px;
+    height: 50px;
+    border: 0px;
+    border-radius: 12px;
+    color: white;
+    background-color: #FF9E0C;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 33px;
+}
+
+
+.header-box-register {
+    width: 416px;
+    height: 503px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 78px;
+}
+
+
+.header-box-register h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
