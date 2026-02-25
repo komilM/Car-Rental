@@ -193,6 +193,19 @@ const Home = () => {
                 </div>
             </section>
 
+            <main>
+                <div className="main-texts">
+                    <h1>Choose the car that suits you</h1>
+                    <Link to="/vehicles" style={{textDecoration: "none", color: "black", display: "flex", gap: "10px"}}>
+                            <p>View All</p>
+                            <img style={{ width: "16px", height: "16px", marginTop: "98px", transform: "rotate(-90deg)"   }} src={swithc} alt="" />
+                    </Link>
+                </div>
+                <div className="main-shop">
+                    
+                </div>
+            </main>
+
         </div>
     )
 }

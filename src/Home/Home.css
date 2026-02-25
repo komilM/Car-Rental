@@ -387,3 +387,29 @@ section {
 }
 
 /* Section */
+
+
+.main-texts {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-texts h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 580px;
+}
+
+
+.main-texts p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 94px;
+    text-decoration: none;
+}
+
+
+.main-shop {
+    margin-top: 40px;
+}
