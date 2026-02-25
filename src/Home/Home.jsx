@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
 import headerbgimg from "../assets/Group 2.png"
@@ -46,7 +46,9 @@ const Home = () => {
                     <div className="header-box-texts">
                         <h1>Experience the road like never before</h1>
                         <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper</p>
+                        <Link to="/vehicles" className='header-btn'>
                         <button>View all cars</button>
+                        </Link>
                     </div>
                     <div className="header-box-register">
                         <h1>Book your car</h1>
@@ -107,6 +109,20 @@ const Home = () => {
                         </div>
 
                         {/* Return place dropdown */}
+
+                        {/* Date of rental */}
+
+                        <input type="date" placeholder='Rental date' />
+
+                        <input type="date" placeholder='Return date' />
+
+                        {/* Date of rental */}
+
+                        {/* Register btns */}
+
+                        <button>Book now</button>
+
+                        {/* Register btns */}
 
                     </div>
                 </div>

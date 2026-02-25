@@ -143,6 +143,20 @@ header {
 }
 
 
+.header-btn {
+    width: 264px;
+    height: 50px;
+    border: 0px;
+    border-radius: 12px;
+    color: white;
+    background-color: #FF9E0C;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 33px;
+    transition: 0.3s;
+}
+
+
 .header-box-texts button:hover {
     transform: scale(1.1);
 }
@@ -177,7 +191,7 @@ header {
     display: flex;
     gap: 60px;
     padding-left: 36px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 40px;
     position: relative;
 }
@@ -240,5 +254,44 @@ header {
 
 .dropdown-list p:hover {
     background-color: #FF9E0C;
+    transform: scale(1.1);
+}
+
+
+.header-box-register input {
+    width: 336px;
+    height: 38px;
+    line-height: 38px;
+    color: black;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    border: 0px;
+    gap: 60px;
+    padding-left: 36px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-right: 36px;
+}
+
+
+.header-box-register button {
+    width: 336px;
+    height: 38px;
+    line-height: 38px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FF9E0C;
+    border-radius: 12px;
+    border: 0px;
+    padding-left: 36px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-right: 36px;
+    transition: 0.3s;
+}
+
+
+.header-box-register button:hover {
     transform: scale(1.1);
 }
