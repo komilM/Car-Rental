@@ -139,6 +139,12 @@ header {
     font-size: 16px;
     font-weight: 600;
     margin-top: 33px;
+    transition: 0.3s;
+}
+
+
+.header-box-texts button:hover {
+    transform: scale(1.1);
 }
 
 
@@ -157,4 +163,82 @@ header {
     font-size: 28px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
+}
+
+
+.dropdown {
+    width: 336px;
+    height: 38px;
+    line-height: 38px;
+    color: black;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    text-align: left;
+    display: flex;
+    gap: 60px;
+    padding-left: 36px;
+    margin-top: 40px;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+.dropdown-texts {
+    gap: 230px;
+    display: flex;
+}
+
+
+.dropdown-texts-3 {
+    gap: 120px;
+    display: flex;
+}
+
+
+.dropdown h6 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 500px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(4px);
+    width: fit-content;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.dropdown:hover .dropdown-list {
+    display: block;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+
+.dropdown-list p {
+    width: 336px;
+    height: 38px;
+    line-height: 38px;
+    color: black;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    margin-top: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.dropdown-list p:hover {
+    background-color: #FF9E0C;
+    transform: scale(1.1);
 }
