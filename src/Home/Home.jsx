@@ -5,6 +5,11 @@ import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
 import headerbgimg from "../assets/Group 2.png"
 import swithc from "../assets/selectarrow.png"
+import headercar from "../assets/Imgs.png"
+import sectionicon1 from "../assets/g3453.png"
+import sectionicon2 from "../assets/g582.png"
+import sectionicon3 from "../assets/g135.png"
+import sectionmainimg from "../assets/img3.png"
 
 const Home = () => {
     return (
@@ -43,11 +48,13 @@ const Home = () => {
 
             <header>
                 <div className="header-box" style={{ backgroundImage: `url(${headerbgimg})` }}>
-                    <div className="header-box-texts">
+                    <div className="header-box-texts" style={{
+                        backgroundImage: `url(${headercar})`, backgroundRepeat: "no-repeat", backgroundPosition: "250px 40px"
+                    }}>
                         <h1>Experience the road like never before</h1>
                         <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper</p>
                         <Link to="/vehicles" className='header-btn'>
-                        <button>View all cars</button>
+                            <button>View all cars</button>
                         </Link>
                     </div>
                     <div className="header-box-register">
@@ -129,6 +136,62 @@ const Home = () => {
             </header>
 
             {/* Header */}
+
+            <section>
+                <div className="section-part-1">
+                    <div className="section-part-1-items">
+                        <div className="section-part-1-item">
+                            <img src={sectionicon1} alt="" />
+                            <h1>Availability</h1>
+                            <p>Diam tincidunt tincidunt erat at semper fermentum. Id ultricies quis</p>
+                        </div>
+                        <div className="section-part-1-item">
+                            <img src={sectionicon2} alt="" />
+                            <h1>Comfort</h1>
+                            <p>Gravida auctor fermentum morbi vulputate
+                                ac egestas orcietium convallis</p>
+                        </div>
+                        <div className="section-part-1-item">
+                            <img src={sectionicon3} alt="" />
+                            <h1>Savings</h1>
+                            <p>Pretium convallis id diam sed commodo vestibulum lobortis volutpat</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="section-part-2">
+                    <img src={sectionmainimg} alt="" />
+                    <div className="section-part-2-texts">
+                        <div className="section-part-2-text">
+                            <h1>
+                                <h2>1</h2>
+                                <h4>Erat at semper </h4>
+                            </h1>
+                            <p>Non amet fermentum est in enim at sit ullamcorper. Sit elementum rhoncus nullam feugiat. Risus sem fermentum</p>
+                        </div>
+                        <div className="section-part-2-text">
+                            <h1>
+                                <h2>2</h2>
+                                <h4>Urna nec vivamus risus duis arcu </h4>
+                            </h1>
+                            <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper</p>
+                        </div>
+                        <div className="section-part-2-text">
+                            <h1>
+                                <h2>3</h2>
+                                <h4>Lobortis euismod imperdiet tempus </h4>
+                            </h1>
+                            <p>Viverra scelerisque mauris et nullam molestie et. Augue adipiscing praesent nisl cras nunc luctus viverra nisi</p>
+                        </div>
+                        <div className="section-part-2-text">
+                            <h1>
+                                <h2>4</h2>
+                                <h4>Cras nulla aliquet nam eleifend amet et</h4>
+                            </h1>
+                            <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer. Quisque eleifend tincidunt vulputate libero </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
     )

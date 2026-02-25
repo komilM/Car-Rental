@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* Nav */
 
 nav {
     display: flex;
@@ -82,6 +84,11 @@ nav {
 }
 
 
+/* Nav */
+
+/* Header */
+
+
 header {
     display: flex;
     justify-content: center;
@@ -90,7 +97,6 @@ header {
 
 .header-box {
     display: flex;
-    gap: 74px;
 }
 
 
@@ -108,6 +114,7 @@ header {
 
 .header-box-texts {
     margin-top: 168px;
+    width: 700px;
 }
 
 
@@ -295,3 +302,88 @@ header {
 .header-box-register button:hover {
     transform: scale(1.1);
 }
+
+
+/* Header */
+
+
+/* Section */
+
+.section-part-1-item {
+    width: 317px;
+    height: 194px;
+    text-align: center;
+}
+
+
+.section-part-1-item h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+}
+
+.section-part-1-item p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-top: 29px;
+}
+
+.section-part-1-items {
+    display: flex;
+    justify-content: center;
+    gap: 112px;
+    margin-top: 60px;
+}
+
+
+.section-part-2 {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 160px;
+}
+
+
+.section-part-2-text h1 {
+    display: flex;
+    line-height: 32px;
+    height: 32px;
+    margin-top: 29px;
+    gap: 16px;
+}
+
+
+.section-part-2-text h2 {
+    font-size: 16px;
+    font-weight: 600;
+    width: 32px;
+    height: 32px;
+    background-color: #5937E0;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+}
+
+
+.section-part-2-text h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.section-part-2-text p {
+    font-size: 16px;
+    font-family: 400;
+    color: #00000099;
+    width: 500px;
+    margin-top: 20px;
+}
+
+
+section {
+    margin-bottom: 160px;
+}
+
+/* Section */
