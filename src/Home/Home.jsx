@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { Link, NavLink } from 'react-router-dom'
 import logo from "../assets/carlogo.png"
@@ -10,8 +10,20 @@ import sectionicon1 from "../assets/g3453.png"
 import sectionicon2 from "../assets/g582.png"
 import sectionicon3 from "../assets/g135.png"
 import sectionmainimg from "../assets/img3.png"
+import car from "../assets/amg.png"
 
 const Home = () => {
+
+    const [cars, setCars] = useState([]);
+
+    useEffect(() => {
+        fetch("https://69a11be22e82ee536fa037ba.mockapi.io/Cars")
+            .then(res => res.json())
+            .then(data => {
+                setCars(data);
+            })
+    }, [])
+
     return (
         <div className='body'>
 
@@ -137,6 +149,8 @@ const Home = () => {
 
             {/* Header */}
 
+            {/* Section */}
+
             <section>
                 <div className="section-part-1">
                     <div className="section-part-1-items">
@@ -159,8 +173,11 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="section-part-2">
+
                     <img src={sectionmainimg} alt="" />
+
                     <div className="section-part-2-texts">
+
                         <div className="section-part-2-text">
                             <h1>
                                 <h2>1</h2>
@@ -168,6 +185,7 @@ const Home = () => {
                             </h1>
                             <p>Non amet fermentum est in enim at sit ullamcorper. Sit elementum rhoncus nullam feugiat. Risus sem fermentum</p>
                         </div>
+
                         <div className="section-part-2-text">
                             <h1>
                                 <h2>2</h2>
@@ -175,6 +193,7 @@ const Home = () => {
                             </h1>
                             <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper</p>
                         </div>
+
                         <div className="section-part-2-text">
                             <h1>
                                 <h2>3</h2>
@@ -182,6 +201,7 @@ const Home = () => {
                             </h1>
                             <p>Viverra scelerisque mauris et nullam molestie et. Augue adipiscing praesent nisl cras nunc luctus viverra nisi</p>
                         </div>
+
                         <div className="section-part-2-text">
                             <h1>
                                 <h2>4</h2>
@@ -189,25 +209,41 @@ const Home = () => {
                             </h1>
                             <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer. Quisque eleifend tincidunt vulputate libero </p>
                         </div>
+
                     </div>
+
                 </div>
+
             </section>
 
+            {/* Section */}
+
+            {/* Main */}
+
             <main>
+
                 <div className="main-texts">
                     <h1>Choose the car that suits you</h1>
-                    <Link to="/vehicles" style={{textDecoration: "none", color: "black", display: "flex", gap: "10px"}}>
-                            <p>View All</p>
-                            <img style={{ width: "16px", height: "16px", marginTop: "98px", transform: "rotate(-90deg)"   }} src={swithc} alt="" />
+                    <Link to="/vehicles" style={{ textDecoration: "none", color: "black", display: "flex", gap: "10px" }}>
+                        <p>View All</p>
+                        <img style={{ width: "16px", height: "16px", marginTop: "98px", transform: "rotate(-90deg)" }} src={swithc} alt="" />
                     </Link>
                 </div>
+
                 <div className="main-shop">
-                    
+                    {cars.slice(0, 6).map((item) => <div key={item.id} className='main-shop-item'>
+                        <img src={car} />
+                        <h1>{item.name}</h1>
+                        <h3>{item.category}</h3>
+                        <p>{item.price}</p>
+                    </div>)}
                 </div>
             </main>
+
+            {/* Main */}
 
         </div>
     )
 }
 
-export default Home
+export default Home 

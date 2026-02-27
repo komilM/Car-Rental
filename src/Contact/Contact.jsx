@@ -14,11 +14,16 @@ import contactclock from "../assets/clock.png"
 const Contact = () => {
     return (
         <div>
+
+            {/* Nav */}
+
             <nav>
+
                 <div className="nav-logo">
                     <img src={logo} alt="" />
                     <p>Car Rental </p>
                 </div>
+
                 <div className="nav-texts">
                     <NavLink to="/" className="navtext">Home</NavLink>
                     <NavLink to="/vehicles" className="navtext">Vehicles</NavLink>
@@ -26,6 +31,7 @@ const Contact = () => {
                     <NavLink to="/about" className="navtext">About Us</NavLink>
                     <NavLink to="/contact" className="navtext">Contact Us</NavLink>
                 </div>
+
                 <div className="nav-contact">
                     <img src={contactimg} alt="" />
                     <div className="nav-contact-texts">
@@ -33,7 +39,12 @@ const Contact = () => {
                         <h2>+996 247-1680</h2>
                     </div>
                 </div>
+
             </nav>
+
+            {/* Nav */}
+
+            {/* Header */}
 
             <div className="contact-header">
                 <h5>Contact Us</h5>
@@ -120,6 +131,7 @@ const Contact = () => {
                 </div>
 
                 <div className="header-contact-numbers">
+                    
                     <div className="contacts">
                         <img src={contactimgmap} style={{ width: "64px", height: "64px", backgroundColor: "#FF9E0C", borderRadius: "32px", padding: "18px" }} />
                         <div className="contacts-texts">
@@ -127,6 +139,7 @@ const Contact = () => {
                             <h2>Oxford Ave. Cary, NC 27511</h2>
                         </div>
                     </div>
+
                     <div className="contacts">
                         <img src={contactemail} style={{ width: "64px", height: "64px", backgroundColor: "#FF9E0C", borderRadius: "32px", padding: "18px" }} />
                         <div className="contacts-texts">
@@ -134,6 +147,7 @@ const Contact = () => {
                             <h2>nwiger@yahoo.com</h2>
                         </div>
                     </div>
+
                     <div className="contacts">
                         <img src={contactphone} style={{ width: "64px", height: "64px", backgroundColor: "#FF9E0C", borderRadius: "32px", padding: "18px" }} />
                         <div className="contacts-texts">
@@ -141,6 +155,7 @@ const Contact = () => {
                             <h2>+537 547-6401</h2>
                         </div>
                     </div>
+
                     <div className="contacts">
                         <img src={contactclock} style={{ width: "64px", height: "64px", backgroundColor: "#FF9E0C", borderRadius: "32px", padding: "18px" }} />
                         <div className="contacts-texts">
@@ -148,7 +163,14 @@ const Contact = () => {
                             <h2>Sun-Mon: 10am - 10pm</h2>
                         </div>
                     </div>
+
                 </div>
+
+            </div>
+
+            {/* Header */}
+
+            <div className="contact-secion">
 
             </div>
         </div>
