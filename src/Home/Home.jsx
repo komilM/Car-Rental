@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Home.css"
-import { Link, NavLink } from 'react-router-dom'
+import { Link, Navigate, NavLink, useNavigate } from 'react-router-dom'
 import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
 import headerbgimg from "../assets/Group 2.png"
@@ -22,6 +22,7 @@ import carfoot from "../assets/Group 33.png"
 const Home = () => {
 
     const [cars, setCars] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch("https://69a11be22e82ee536fa037ba.mockapi.io/Cars")
@@ -238,20 +239,20 @@ const Home = () => {
                 </div>
 
                 <div className="main-shop">
-                    {cars.slice(0, 6).map((item) => <div key={item.id} className='main-shop-item'>
+                    {cars.slice(0, 6).map((p) => <div key={p.id} className='main-shop-item'>
                         <img src={car} style={{ width: "358px", height: "230px" }} />
                         <div className="main-shop-item-texts">
                             <h4>
-                                <h1>{item.name}</h1>
-                                <h3>{item.category}</h3>
+                                <h1>{p.name}</h1>
+                                <h3>{p.category}</h3>
                             </h4>
                             <h4>
-                                <p>{item.price}</p>
+                                <p>{p.price}</p>
                                 <h3>per day</h3>
                             </h4>
                         </div>
                         <img style={{ marginTop: "40px" }} src={shopitemicons} />
-                        <button>View Details</button>
+                        <button onClick={() => navigate(`/info/${p.id}`)}>View Details</button>
                     </div>)}
                 </div>
 
@@ -266,12 +267,12 @@ const Home = () => {
                         <p style={{ fontSize: "16px", fontWeight: "400px", marginTop: "20px" }}>Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in. Diam tincidunt tincidunt erat at semper fermentum</p>
                     </div>
                     <div className="main-part-2-numbers" style={{
-                    backgroundImage: `url(${carfoot})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "700px",
-                    backgroundPosition: "-200px -200px",
+                        backgroundImage: `url(${carfoot})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "700px",
+                        backgroundPosition: "-200px -200px",
 
-                }}>
+                    }}>
                         <div className="numbers-item">
                             <img src={meincaricon} />
                             <div className="number-item-texts">
@@ -306,6 +307,7 @@ const Home = () => {
                 <div className="main-part-3">
                     <div className="main-part-3-texts">
                         <h1>Download mobile app</h1>
+                        <p>Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus turpis nibh placerat massa. Fermentum urna ut at et in. Turpis aliquet cras hendrerit enim condimentum. Condimentum interdum risus bibendum urna</p>
                     </div>
                 </div>
 
