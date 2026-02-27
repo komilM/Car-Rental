@@ -11,6 +11,13 @@ import sectionicon2 from "../assets/g582.png"
 import sectionicon3 from "../assets/g135.png"
 import sectionmainimg from "../assets/img3.png"
 import car from "../assets/amg.png"
+import shopitemicons from "../assets/Icons+ text.png"
+import meincaricon from "../assets/car71.png"
+import mainloveicon from "../assets/love 1.png"
+import maincelendar from "../assets/calendar11.png"
+import mainclockicon from "../assets/speedometer 1.png"
+import mainbgimg from "../assets/Img 66.png"
+import carfoot from "../assets/Group 33.png"
 
 const Home = () => {
 
@@ -232,12 +239,76 @@ const Home = () => {
 
                 <div className="main-shop">
                     {cars.slice(0, 6).map((item) => <div key={item.id} className='main-shop-item'>
-                        <img src={car} />
-                        <h1>{item.name}</h1>
-                        <h3>{item.category}</h3>
-                        <p>{item.price}</p>
+                        <img src={car} style={{ width: "358px", height: "230px" }} />
+                        <div className="main-shop-item-texts">
+                            <h4>
+                                <h1>{item.name}</h1>
+                                <h3>{item.category}</h3>
+                            </h4>
+                            <h4>
+                                <p>{item.price}</p>
+                                <h3>per day</h3>
+                            </h4>
+                        </div>
+                        <img style={{ marginTop: "40px" }} src={shopitemicons} />
+                        <button>View Details</button>
                     </div>)}
                 </div>
+
+                <div className="main-part-2" style={{
+                    backgroundImage: `url(${mainbgimg})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "800px",
+                    backgroundPosition: "300px 100px",
+                }}>
+                    <div className="main-part-2-texts-p" style={{ width: "640px", }}>
+                        <h1 style={{ fontSize: "50px", fontWeight: "700" }}>Facts in numbers</h1>
+                        <p style={{ fontSize: "16px", fontWeight: "400px", marginTop: "20px" }}>Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in. Diam tincidunt tincidunt erat at semper fermentum</p>
+                    </div>
+                    <div className="main-part-2-numbers" style={{
+                    backgroundImage: `url(${carfoot})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "700px",
+                    backgroundPosition: "-200px -200px",
+
+                }}>
+                        <div className="numbers-item">
+                            <img src={meincaricon} />
+                            <div className="number-item-texts">
+                                <h1>540+</h1>
+                                <p>Cars</p>
+                            </div>
+                        </div>
+                        <div className="numbers-item">
+                            <img src={mainloveicon} />
+                            <div className="number-item-texts">
+                                <h1>20k+</h1>
+                                <p>Customers</p>
+                            </div>
+                        </div>
+                        <div className="numbers-item">
+                            <img src={maincelendar} />
+                            <div className="number-item-texts">
+                                <h1>25+</h1>
+                                <p>Years</p>
+                            </div>
+                        </div>
+                        <div className="numbers-item">
+                            <img src={mainclockicon} />
+                            <div className="number-item-texts">
+                                <h1>20m+</h1>
+                                <p>Miles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="main-part-3">
+                    <div className="main-part-3-texts">
+                        <h1>Download mobile app</h1>
+                    </div>
+                </div>
+
             </main>
 
             {/* Main */}

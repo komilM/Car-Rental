@@ -392,6 +392,7 @@ section {
 .main-texts {
     display: flex;
     justify-content: space-around;
+    gap: 600px;
 }
 
 
@@ -412,4 +413,142 @@ section {
 
 .main-shop {
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+.main-shop img {
+    width: 368px;
+    height: 24px;
+}
+
+
+.main-shop-item {
+    width: 416px;
+    height: 513px;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+
+.main-shop-item-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-shop-item-texts p {
+    font-size: 28px;
+    font-weight: 600;
+    color: #5937E0;
+    margin-top: 1px
+}
+
+
+.main-shop-item-texts h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.main-shop-item-texts h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000099;
+    margin-top: 4px;
+}
+
+
+.main-shop button {
+    width: 368px;
+    height: 50px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: #5937E0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+
+.main-shop button:hover {
+    transform: scale(1.1);
+}
+
+
+.main-part-2 {
+    text-align: center;
+    background-color: #5937E0;
+    border-radius: 20px;
+    width: 1296px;
+    height: 486px;
+    margin-top: 120px;
+    padding-top: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.numbers-item {
+    width: 240px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 16px;
+    display: flex;
+    text-align: left;
+    gap: 16px;
+}
+
+
+.numbers-item img {
+    background-color: #FF9E0C;
+    width: 72px;
+    height: 68px;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+
+.numbers-item h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.numbers-item p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+.number-item-texts {
+    margin-top: 7px;
+}
+
+
+.main-part-2-numbers {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    padding-top: 80px;
+    width: 100%;
 }
