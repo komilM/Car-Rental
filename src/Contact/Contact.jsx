@@ -39,7 +39,7 @@ const Contact = () => {
                 <h5>Contact Us</h5>
 
                 <div className="header-booking">
-                    <div className="header-box-register">
+                    <div className="header-box-register1">
                         <h1>Book your car</h1>
 
                         {/* Car dropdown */}

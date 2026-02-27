@@ -83,7 +83,7 @@ nav {
 }
 
 
-.header-box-register {
+.header-box-register1 {
     width: 416px;
     height: 523px;
     border-radius: 20px;
@@ -93,7 +93,7 @@ nav {
 }
 
 
-.header-box-register h1 {
+.header-box-register1 h1 {
     text-align: center;
     margin-top: 40px;
     font-size: 28px;
@@ -180,7 +180,7 @@ nav {
 }
 
 
-.header-box-register input {
+.header-box-register1 input {
     width: 336px;
     height: 38px;
     line-height: 38px;
@@ -196,7 +196,7 @@ nav {
 }
 
 
-.header-box-register button {
+.header-box-register1 button {
     width: 336px;
     height: 38px;
     line-height: 38px;
@@ -214,7 +214,7 @@ nav {
 }
 
 
-.header-box-register button:hover {
+.header-box-register1 button:hover {
     transform: scale(1.1);
 }
 
