@@ -6,11 +6,9 @@ import contactimg from "../assets/Icon+bg.png"
 import car from "../assets/amg.png"
 import shopitemicons from "../assets/Icons+ text.png"
 
-// 👇 Groups ro'yxati - API dagi category nomlari bilan mos bo'lishi kerak
 const groups = [
     { label: "All vehicles", value: "all" },
     { label: "Sedan", value: "Sedan" },
-    { label: "Suv", value: "Suv" },
     { label: "Sport", value: "Sport" },
     { label: "Supercar", value: "Supercar" }
 ]
@@ -26,7 +24,6 @@ const Vehicles = () => {
             .then(data => setCars(data))
     }, [])
 
-    // 👇 Filter - activeGroup "all" bo'lsa hammasi, bo'lmasa category bo'yicha
     const filtered = activeGroup === "all"
         ? cars
         : cars.filter(car => car.category === activeGroup)
