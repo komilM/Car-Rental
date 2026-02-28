@@ -57,7 +57,7 @@ const Vehicles = () => {
 
                     {cars.map((p) => <div key={p.id} className='main-shop-item'>
                         <img
-                            src={p.image}
+                            src={car}
                             style={{ width: "358px", height: "230px", objectFit: "cover" }}
                         />
                         <div className="main-shop-item-texts">
