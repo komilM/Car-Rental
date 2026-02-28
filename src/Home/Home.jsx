@@ -18,6 +18,9 @@ import maincelendar from "../assets/calendar11.png"
 import mainclockicon from "../assets/speedometer 1.png"
 import mainbgimg from "../assets/Img 66.png"
 import carfoot from "../assets/Group 33.png"
+import main3img from "../assets/Group 12.png"
+import h1carfoot from '../assets/Group555.png'
+import carjpgimg from "../assets/car55555.png"
 
 const Home = () => {
 
@@ -31,6 +34,11 @@ const Home = () => {
                 setCars(data);
             })
     }, [])
+
+
+    if (!cars) {
+        return <h1>Loading...</h1>;
+    }
 
     return (
         <div className='body'>
@@ -239,9 +247,11 @@ const Home = () => {
                 </div>
 
                 <div className="main-shop">
+
                     {cars.slice(0, 6).map((p) => <div key={p.id} className='main-shop-item'>
                         <img src={car} style={{ width: "358px", height: "230px" }} />
                         <div className="main-shop-item-texts">
+
                             <h4>
                                 <h1>{p.name}</h1>
                                 <h3>{p.category}</h3>
@@ -250,10 +260,12 @@ const Home = () => {
                                 <p>{p.price}</p>
                                 <h3>per day</h3>
                             </h4>
+
                         </div>
                         <img style={{ marginTop: "40px" }} src={shopitemicons} />
                         <button onClick={() => navigate(`/info/${p.id}`)}>View Details</button>
                     </div>)}
+
                 </div>
 
                 <div className="main-part-2" style={{
@@ -266,6 +278,7 @@ const Home = () => {
                         <h1 style={{ fontSize: "50px", fontWeight: "700" }}>Facts in numbers</h1>
                         <p style={{ fontSize: "16px", fontWeight: "400px", marginTop: "20px" }}>Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in. Diam tincidunt tincidunt erat at semper fermentum</p>
                     </div>
+
                     <div className="main-part-2-numbers" style={{
                         backgroundImage: `url(${carfoot})`,
                         backgroundRepeat: "no-repeat",
@@ -273,6 +286,7 @@ const Home = () => {
                         backgroundPosition: "-200px -200px",
 
                     }}>
+
                         <div className="numbers-item">
                             <img src={meincaricon} />
                             <div className="number-item-texts">
@@ -280,6 +294,7 @@ const Home = () => {
                                 <p>Cars</p>
                             </div>
                         </div>
+
                         <div className="numbers-item">
                             <img src={mainloveicon} />
                             <div className="number-item-texts">
@@ -287,6 +302,7 @@ const Home = () => {
                                 <p>Customers</p>
                             </div>
                         </div>
+
                         <div className="numbers-item">
                             <img src={maincelendar} />
                             <div className="number-item-texts">
@@ -294,6 +310,7 @@ const Home = () => {
                                 <p>Years</p>
                             </div>
                         </div>
+
                         <div className="numbers-item">
                             <img src={mainclockicon} />
                             <div className="number-item-texts">
@@ -301,6 +318,7 @@ const Home = () => {
                                 <p>Miles</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -309,11 +327,34 @@ const Home = () => {
                         <h1>Download mobile app</h1>
                         <p>Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus turpis nibh placerat massa. Fermentum urna ut at et in. Turpis aliquet cras hendrerit enim condimentum. Condimentum interdum risus bibendum urna</p>
                     </div>
+                    <img src={main3img} alt="" />
                 </div>
 
             </main>
 
             {/* Main */}
+
+            {/* Footer */}
+
+            <div className="footer-main">
+
+                <div className="footer-part-1">
+                    <div className="footer-part1-texts">
+                        <h1 style={{
+                            backgroundImage: `url(${h1carfoot})`,
+                            backgroundRepeat: "no-repeat"
+                        }}>Enjoy every mile with adorable companionship.</h1>
+                        <p>Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in. Diam tincidunt tincidunt erat</p>
+                        <input type="text" placeholder='city' />
+                        <button>Search</button>
+                    </div>
+                    <img src={carjpgimg} alt="" />
+                </div>
+
+
+            </div>
+
+
 
         </div>
     )
