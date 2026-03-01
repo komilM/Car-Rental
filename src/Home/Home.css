@@ -187,7 +187,7 @@ header {
 }
 
 
-.dropdown {
+.dropdown1 {
     width: 336px;
     height: 38px;
     line-height: 38px;
@@ -216,7 +216,7 @@ header {
 }
 
 
-.dropdown h6 {
+.dropdown1 h6 {
     font-size: 25px;
     font-weight: 400;
 }
@@ -239,7 +239,7 @@ header {
 }
 
 
-.dropdown:hover .dropdown-list {
+.dropdown1:hover .dropdown-list {
     display: block;
     margin-top: 30px;
     margin-left: -10px;

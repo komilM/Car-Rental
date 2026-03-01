@@ -90,7 +90,7 @@ const Home = () => {
 
                         {/* Car dropdown */}
 
-                        <div className="dropdown">
+                        <div className="dropdown1">
                             <div className="dropdown-texts">
                                 <h6>Car</h6>
 
@@ -109,11 +109,11 @@ const Home = () => {
 
                         {/* Rental place dropdown */}
 
-                        <div className="dropdown">
-                            <div className="dropdown-texts-3    ">
+                        <div className="dropdown1">
+                            <div className="dropdown-texts-3">
                                 <h6>Place of rental</h6>
 
-                                <img style={{ width: "16px", height: "16px", marginTop: "12px" }} src={swithc} alt="" />
+                                <img style={{ width: "16px", height: "16px", marginTop: "12px" , marginLeft: "-10px" }} src={swithc} alt="" />
                             </div>
 
                             <ul className="dropdown-list">
@@ -128,11 +128,11 @@ const Home = () => {
 
                         {/* Return place dropdown */}
 
-                        <div className="dropdown">
+                        <div className="dropdown1">
                             <div className="dropdown-texts-3">
                                 <h6>Place of return</h6>
 
-                                <img style={{ width: "16px", height: "16px", marginTop: "12px" }} src={swithc} alt="" />
+                                <img style={{ width: "16px", height: "16px", marginTop: "12px", marginLeft: "-10px" }} src={swithc} alt="" />
                             </div>
 
                             <ul className="dropdown-list">
