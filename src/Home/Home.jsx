@@ -21,6 +21,7 @@ import carfoot from "../assets/Group 33.png"
 import main3img from "../assets/Group 12.png"
 import h1carfoot from '../assets/Group555.png'
 import carjpgimg from "../assets/car55555.png"
+import footerimg from "../assets/Footer.png"
 
 const Home = () => {
 
@@ -55,7 +56,6 @@ const Home = () => {
                 <div className="nav-texts">
                     <NavLink to="/" className="navtext">Home</NavLink>
                     <NavLink to="/vehicles" className="navtext">Vehicles</NavLink>
-                    <NavLink to="/details" className="navtext">Details</NavLink>
                     <NavLink to="/about" className="navtext">About Us</NavLink>
                     <NavLink to="/contact" className="navtext">Contact Us</NavLink>
                 </div>
@@ -353,6 +353,10 @@ const Home = () => {
 
 
             </div>
+
+            <footer>
+                <img src={footerimg} alt="" />
+            </footer>
 
 
 

@@ -105,6 +105,7 @@ main h6 {
     background-color: #FAFAFA;
     border-radius: 20px;
     padding: 24px;
+    transition: 0.3s;
 }
 
 
@@ -152,7 +153,7 @@ main h6 {
 
 
 .main-shop button:hover {
-    transform: scale(1.1);
+    background-color: #FF9E0C;
 }
 
 
@@ -169,4 +170,9 @@ main h6 {
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
+}
+
+
+.main-shop-item:hover{
+    transform: scale(1.1);
 }

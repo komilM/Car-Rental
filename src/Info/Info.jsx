@@ -14,7 +14,7 @@ const Info = () => {
     }, [id]);
 
     if (!mahsulot) {
-        return <h1>Loading...</h1>;
+        return <h1 style={{textAlign: "center", marginTop: "300px"}}>Loading...</h1>;
     }
 
     return (

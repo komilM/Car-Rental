@@ -15,7 +15,6 @@ const About = () => {
                 <div className="nav-texts">
                     <NavLink to="/" className="navtext">Home</NavLink>
                     <NavLink to="/vehicles" className="navtext">Vehicles</NavLink>
-                    <NavLink to="/details" className="navtext">Details</NavLink>
                     <NavLink to="/about" className="navtext">About Us</NavLink>
                     <NavLink to="/contact" className="navtext">Contact Us</NavLink>
                 </div>

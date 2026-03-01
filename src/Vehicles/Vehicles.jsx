@@ -5,6 +5,8 @@ import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
 import car from "../assets/amg.png"
 import shopitemicons from "../assets/Icons+ text.png"
+import footerimg from "../assets/Footer.png"
+
 
 const groups = [
     { label: "All vehicles", value: "all" },
@@ -28,7 +30,7 @@ const Vehicles = () => {
         ? cars
         : cars.filter(car => car.category === activeGroup)
 
-    if (!cars.length) return <h1>Loading...</h1>;
+    if (!cars.length) return <h1 style={{textAlign: "center", marginTop: "300px"}}>Loading...</h1>;
 
     return (
         <div>
@@ -40,7 +42,6 @@ const Vehicles = () => {
                 <div className="nav-texts">
                     <NavLink to="/" className="navtext">Home</NavLink>
                     <NavLink to="/vehicles" className="navtext">Vehicles</NavLink>
-                    <NavLink to="/details" className="navtext">Details</NavLink>
                     <NavLink to="/about" className="navtext">About Us</NavLink>
                     <NavLink to="/contact" className="navtext">Contact Us</NavLink>
                 </div>
@@ -94,6 +95,9 @@ const Vehicles = () => {
                     </div>
                 </div>
             </main>
+            <footer>
+                <img src={footerimg} alt="" />
+            </footer>
         </div>
     )
 }

@@ -107,7 +107,7 @@ nav {
     height: 38px;
     line-height: 38px;
     color: black;
-    background-color: #FAFAFA;
+    background-color: transparent;
     border-radius: 12px;
     text-align: left;
     display: flex;
@@ -116,6 +116,7 @@ nav {
     margin-top: 30px;
     margin-left: 40px;
     position: relative;
+    background-color: #694BE3;
 }
 
 
@@ -145,7 +146,6 @@ nav {
     background-color: rgba(0, 0, 0, 0.1);
     width: 500px;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(4px);
     width: fit-content;
     padding: 8px;
@@ -185,7 +185,7 @@ nav {
     height: 38px;
     line-height: 38px;
     color: black;
-    background-color: #FAFAFA;
+    background-color: #694BE3;
     border-radius: 12px;
     border: 0px;
     gap: 60px;
