@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 104px;
+    line-height: 104px;
+    gap: 186px;
+}
+
+
+.nav-logo {
+    display: flex;
+    height: 48px;
+    line-height: 48px;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+
+.nav-logo img {
+    width: 48px;
+    height: 48px;
+}
+
+
+.nav-texts {
+    display: flex;
+    justify-content: center;
+}
+
+
+.navtext {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    width: 100px;
+    transition: 0.3s;
+}
+
+
+.navtext:hover {
+    font-weight: 700;
+}
+
+.nav-contact {
+    display: flex;
+    gap: 12px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 32px;
+}
+
+
+.nav-contact img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.nav-contact-texts p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -13px;
+}
+
+
+.nav-contact-texts h2 {
+    font-size: 16;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+
+/* Nav */
+
+
+/* Main */
+
+.main-texts {
+    display: flex;
+    justify-content: space-around;
+    gap: 600px;
+}
+
+
+.main-texts h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 580px;
+}
+
+
+.main-texts p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 94px;
+    text-decoration: none;
+}
+
+
+.main-shop {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+.main-shop img {
+    width: 368px;
+    height: 24px;
+}
+
+
+.main-shop-item {
+    width: 416px;
+    height: 513px;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+
+.main-shop-item-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-shop-item-texts p {
+    font-size: 28px;
+    font-weight: 600;
+    color: #5937E0;
+    margin-top: 1px
+}
+
+
+.main-shop-item-texts h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.main-shop-item-texts h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000099;
+    margin-top: 4px;
+}
+
+
+.main-shop button {
+    width: 368px;
+    height: 50px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: #5937E0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+
+.main-shop button:hover {
+    transform: scale(1.1);
+}

@@ -113,7 +113,7 @@ const Home = () => {
                             <div className="dropdown-texts-3">
                                 <h6>Place of rental</h6>
 
-                                <img style={{ width: "16px", height: "16px", marginTop: "12px" , marginLeft: "-10px" }} src={swithc} alt="" />
+                                <img style={{ width: "16px", height: "16px", marginTop: "12px", marginLeft: "-10px" }} src={swithc} alt="" />
                             </div>
 
                             <ul className="dropdown-list">
@@ -358,7 +358,7 @@ const Home = () => {
                 <img src={footerimg} alt="" />
             </footer>
 
-
+            {/* Footer */}
 
         </div>
     )
