@@ -181,3 +181,10 @@ nav {
 .main-shop button:hover {
     transform: scale(1.1);
 }
+
+
+.sectioninfo {
+    margin-top: 60px;
+    padding-left: 312px;
+    height: 800px;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import "./Info.css"
 import { Link, NavLink, useNavigate, useParams } from 'react-router-dom';
 import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
@@ -18,6 +19,7 @@ import mainbgimg from "../assets/Img 66.png"
 import carfoot from "../assets/Group 33.png"
 import main3img from "../assets/Group 12.png"
 import footerimg from "../assets/Footer.png"
+import sectionimgc from "../assets/Img788.png"
 
 
 const Info = () => {
@@ -74,9 +76,16 @@ const Info = () => {
 
             {/* Nav */}
 
-            <h1>{mahsulot.name}</h1>
-            <p>{mahsulot.price}</p>
-
+            <div className="sectioninfo">
+                <h1 style={{ fontSize: "40px", fontWeight: "700" }}>{mahsulot.name}</h1>
+                <p style={{ fontSize: "40px", fontWeight: "600", color: "#5937E0" }}>{mahsulot.price}</p>
+                <img src={car} alt="" />
+                <div className="section-info-imgs">
+                <img style={{width: "140px", height:"100px"}} src={sectionimgc} alt="" />
+                <img style={{width: "140px", height:"100px", marginLeft: "24px"}} src={sectionimgc} alt="" />
+                <img style={{width: "140px", height:"100px", marginLeft: "24px"}} src={sectionimgc} alt="" />
+                </div>
+            </div>
 
             {/* Main */}
 
