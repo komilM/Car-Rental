@@ -5,19 +5,25 @@ import logo from "../assets/carlogo.png"
 import contactimg from "../assets/Icon+bg.png"
 
 const About = () => {
-  return (
-    <div>
-      <nav>
+    return (
+        <div>
+
+            {/* Nav */}
+
+            <nav>
+
                 <div className="nav-logo">
                     <img src={logo} alt="" />
                     <p>Car Rental </p>
                 </div>
+
                 <div className="nav-texts">
                     <NavLink to="/" className="navtext">Home</NavLink>
                     <NavLink to="/vehicles" className="navtext">Vehicles</NavLink>
                     <NavLink to="/about" className="navtext">About Us</NavLink>
                     <NavLink to="/contact" className="navtext">Contact Us</NavLink>
                 </div>
+
                 <div className="nav-contact">
                     <img src={contactimg} alt="" />
                     <div className="nav-contact-texts">
@@ -25,9 +31,13 @@ const About = () => {
                         <h2>+996 247-1680</h2>
                     </div>
                 </div>
+                
             </nav>
-    </div>
-  )
+
+            {/* Nav */}
+
+        </div>
+    )
 }
 
 export default About

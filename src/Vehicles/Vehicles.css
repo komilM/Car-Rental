@@ -176,3 +176,17 @@ main h6 {
 .main-shop-item:hover{
     transform: scale(1.1);
 }
+
+
+.footer-part-1v {
+    width: 1296px;
+    height: 174px;
+    background-color: #FAFAFA;
+    border-radius: 40px;
+    margin-top: 60px;
+    margin-left: 7.3%;
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    padding-top: 65px;
+}

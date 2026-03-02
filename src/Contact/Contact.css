@@ -273,3 +273,48 @@ nav {
     gap: 66px;
     margin-top: 60px;
 }
+
+
+.contact-section {
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+.contact-section-items {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.contact-section-item h1 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.contact-section-item p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 20px;
+    color: #00000099;
+}
+
+
+.footer-part-1v {
+    width: 1296px;
+    height: 174px;
+    background-color: #FAFAFA;
+    border-radius: 40px;
+    margin-top: 60px;
+    margin-left: 7.3%;
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    padding-top: 65px;
+}

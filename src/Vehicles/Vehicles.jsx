@@ -6,6 +6,12 @@ import contactimg from "../assets/Icon+bg.png"
 import car from "../assets/amg.png"
 import shopitemicons from "../assets/Icons+ text.png"
 import footerimg from "../assets/Footer.png"
+import logo1 from "../assets/Logo22.png"
+import logo2 from "../assets/Logo33.png"
+import logo3 from "../assets/Logo44.png"
+import logo4 from "../assets/Logo55.png"
+import logo5 from "../assets/Logo66.png"
+import logo6 from "../assets/Logo77.png"
 
 
 const groups = [
@@ -30,10 +36,13 @@ const Vehicles = () => {
         ? cars
         : cars.filter(car => car.category === activeGroup)
 
-    if (!cars.length) return <h1 style={{textAlign: "center", marginTop: "300px"}}>Loading...</h1>;
+    if (!cars.length) return <h1 style={{ textAlign: "center", marginTop: "300px" }}>Loading...</h1>;
 
     return (
         <div>
+
+            {/* Nav */}
+
             <nav>
                 <div className="nav-logo">
                     <img src={logo} alt="" />
@@ -53,6 +62,10 @@ const Vehicles = () => {
                     </div>
                 </div>
             </nav>
+
+            {/* Nav */}
+
+            {/* Main */}
 
             <main>
                 <h6>Select a vehicle group</h6>
@@ -95,9 +108,26 @@ const Vehicles = () => {
                     </div>
                 </div>
             </main>
+
+            {/* Main */}
+
+            {/* Footer */}
+
+            <div className="footer-part-1v">
+                <img src={logo1} style={{width: "82px", height:"54px"}} />
+                <img src={logo2} style={{width: "111px", height:"44px"}}/>
+                <img src={logo3} style={{width: "55px", height:"54px"}} />
+                <img src={logo4} style={{width: "109px", height:"44px"}} />
+                <img src={logo5} style={{width: "55px", height:"54px"}}/>
+                <img src={logo6} style={{width: "124px", height:"42px"}}/>
+            </div>
+
             <footer>
                 <img src={footerimg} alt="" />
             </footer>
+
+            {/* Footer */}
+
         </div>
     )
 }

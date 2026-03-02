@@ -9,6 +9,14 @@ import contactimgmap from "../assets/map-pin.png"
 import contactemail from "../assets/mail.png"
 import contactphone from "../assets/phone.png"
 import contactclock from "../assets/clock.png"
+import sectionimgc from "../assets/Img788.png"
+import footerimg from "../assets/Footer.png"
+import logo1 from "../assets/Logo22.png"
+import logo2 from "../assets/Logo33.png"
+import logo3 from "../assets/Logo44.png"
+import logo4 from "../assets/Logo55.png"
+import logo5 from "../assets/Logo66.png"
+import logo6 from "../assets/Logo77.png"
 
 
 const Contact = () => {
@@ -130,7 +138,7 @@ const Contact = () => {
                 </div>
 
                 <div className="header-contact-numbers">
-                    
+
                     <div className="contacts">
                         <img src={contactimgmap} style={{ width: "64px", height: "64px", backgroundColor: "#FF9E0C", borderRadius: "32px", padding: "18px" }} />
                         <div className="contacts-texts">
@@ -169,9 +177,48 @@ const Contact = () => {
 
             {/* Header */}
 
-            <div className="contact-secion">
+            {/* Section */}
 
+            <div className="contact-section">
+                <h1>Latest blog posts & news</h1>
+                <div className="contact-section-items">
+                    <div className="contact-section-item">
+                        <img src={sectionimgc} alt="" />
+                        <h1>How to choose the right car</h1>
+                        <p>News / 12April 2024</p>
+                    </div>
+                    <div className="contact-section-item">
+                        <img src={sectionimgc} alt="" />
+                        <h1>Which plan is right for me?</h1>
+                        <p>News / 12April 2024</p>
+                    </div>
+                    <div className="contact-section-item">
+                        <img src={sectionimgc} alt="" />
+                        <h1>Enjoy Speed, Choice & Total Control</h1>
+                        <p>News / 12April 2024</p>
+                    </div>
+                </div>
             </div>
+
+            {/* Section */}
+
+            {/* Footer */}
+
+            <div className="footer-part-1v">
+                <img src={logo1} style={{ width: "82px", height: "54px" }} />
+                <img src={logo2} style={{ width: "111px", height: "44px" }} />
+                <img src={logo3} style={{ width: "55px", height: "54px" }} />
+                <img src={logo4} style={{ width: "109px", height: "44px" }} />
+                <img src={logo5} style={{ width: "55px", height: "54px" }} />
+                <img src={logo6} style={{ width: "124px", height: "42px" }} />
+            </div>
+
+            <footer>
+                <img src={footerimg} alt="" />
+            </footer>
+
+            {/* Footer */}
+
         </div>
     )
 }

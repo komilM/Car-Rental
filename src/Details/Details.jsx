@@ -8,6 +8,9 @@ const Details = () => {
 
     return (
         <div>
+
+            {/* Nav */}
+
             <nav>
                 <div className="nav-logo">
                     <img src={logo} alt="" />
@@ -27,9 +30,9 @@ const Details = () => {
                     </div>
                 </div>
             </nav>
-            <header>
-                
-            </header>
+
+            {/* Nav */}
+
         </div>
     )
 }
