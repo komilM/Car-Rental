@@ -85,8 +85,8 @@ const Info = () => {
                 <div className="section-info-main">
                     <h1 style={{ fontSize: "40px", fontWeight: "700" }}>{mahsulot.name}</h1>
                     <p style={{ fontSize: "40px", fontWeight: "600", color: "#5937E0", marginTop: "24px" }}>{mahsulot.price}</p>
-                    <img src={car} alt="" />
-                    <div className="section-info-imgs" style={{marginTop: "50px"}}>
+                    <img src={car} />
+                    <div className="section-info-imgs" style={{ marginTop: "50px" }}>
                         <img style={{ width: "140px", height: "100px", transition: "0.3s" }} src={sectionimgc} alt="" />
                         <img style={{ width: "140px", height: "100px", marginLeft: "24px", transition: "0.3s" }} src={sectionimgc} alt="" />
                         <img style={{ width: "140px", height: "100px", marginLeft: "24px", transition: "0.3s" }} src={sectionimgc} alt="" />
