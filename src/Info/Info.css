@@ -183,8 +183,90 @@ nav {
 }
 
 
+.section-info-imgs img:hover {
+    transform: scale(1.1);
+}
+
+
 .sectioninfo {
     margin-top: 60px;
-    padding-left: 312px;
     height: 800px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.sectioninfo-texts h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 24px;
+}
+
+
+.section-info-item {
+    width: 196px;
+    height: 148px;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    padding: 24px;
+    transition: 0.3s;
+}
+
+
+.section-info-item:hover {
+    transform: scale(1.1);
+    background-color: #5937E0;
+    color: white;
+}
+
+
+.section-info-item img {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+
+.section-info-item h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.section-info-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000099;
+    margin-top: 8px;
+}
+
+
+.section-info-texts-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 640px;
+    margin-top: 40px;
+}
+
+
+.section-info-texts button {
+    width: 290px;
+    height: 50px;
+    color: white;
+    background-color: #5937E0;
+    border: 0px;
+    border-radius: 12px;
+    margin-top: 64px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.section-info-texts button:hover {
+    transform: scale(1.1);
 }
