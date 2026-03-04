@@ -81,3 +81,53 @@ nav {
     font-weight: 600;
     margin-top: -15px;
 }
+
+
+.header-about-texts {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+
+.header-about-texts h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 300px;
+}
+
+
+.header-about-text-1 h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.header-about-text-1 p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 350px;
+}
+
+
+.header-img-number h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #5937E0;
+}
+
+
+.header-img-number p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.header-img-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 60px;
+}
