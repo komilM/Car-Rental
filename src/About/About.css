@@ -131,3 +131,150 @@ nav {
     gap: 300px;
     margin-top: 60px;
 }
+
+
+.section-comments-item {
+    width: 416px;
+    height: 480px;
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    padding-top: 52px;
+    transition: 0.3s;
+}
+
+
+.section-comments-item h1 {
+    font-size: 120px;
+    text-align: left;
+    font-weight: 700;
+    color: #5937E0;
+    margin-left: 55px;
+}
+
+
+.section-comments-item p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-left: 39px;
+    width: 330px;
+    text-align: center;
+}
+
+
+.section-comments-imgs {
+    height: 124px;
+    background-color: #5937E0;
+    margin-top: 130px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    line-height: 124px;
+}
+
+
+.section-comments-imgs p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
+
+.section-comments-imgs h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: -95px;
+    text-align: center;
+}
+
+
+.section-comments-item img {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    margin-top: 41px;
+    margin-left: 166px;
+}
+
+
+.section-comments-items {
+    display: flex;
+    margin-top: 40px;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+.section-comments-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+
+.footer-part-1-1 {
+    width: 1296px;
+    height: 415px;
+    background-color: #5937E0;
+    border-radius: 20px;
+    margin-top: 120px;
+    padding-top: 58px;
+    display: flex;
+}
+
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-part-1-1 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    width: 750px;
+    height: 150px;
+    padding-left: 86px;
+}
+
+
+.footer-part-1-1 h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    padding-left: 86px;
+    position: absolute;
+    margin-top: -50px;
+}
+
+
+.footer-part-1-1 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+    width: 586px;
+    padding-left: 86px;
+}
+
+
+.footer-part-1-1 button {
+    width: 132px;
+    height: 40px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: #FF9E0C;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-left: 86px;
+    margin-top: 40px;
+}
+
+
+.footer-part-1-1 button:hover {
+    transform: scale(1.1);
+}
