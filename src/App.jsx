@@ -6,6 +6,7 @@ import Details from './Details/Details'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import Info from './Info/Info'
+import SignUp from './Signup/Signup'
 
 const App = () => {
   return (
@@ -13,10 +14,11 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/vehicles' element={<Vehicles />} />
-        <Route path='/details/:id' element={<Details />} />
-        <Route path='/info/:id' element={<Info/>} />
+        <Route path='/details' element={<Details />} />
+        <Route path='/info/:id' element={<Info />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/signup' element={<SignUp />} />
       </Routes>
     </div>
   )

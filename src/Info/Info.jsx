@@ -126,7 +126,7 @@ const Info = () => {
                         </div>
 
                     </div>
-                    <button>Rent a car</button>
+                    <button onClick={() => navigate(`/signup`)}>Rent a car</button>
                 </div>
             </div>
 
