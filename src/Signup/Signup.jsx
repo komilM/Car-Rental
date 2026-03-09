@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Signup.css"
 import { useNavigate } from 'react-router-dom';
 
@@ -6,29 +6,47 @@ import { useNavigate } from 'react-router-dom';
 const Signup = () => {
 
     const navigate = useNavigate();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
 
-  return (
-    <div>
-      <div className="signup-container">
-      <div className="signup-card">
-        <h2>Sign Up</h2>
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-        <form>
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Confirm Password" />
+        navigate("/details", {
+            state: {
+                name: name,
+                email: email
+            }
+        });
+    };
 
-          <button onClick={() => navigate(`/details`)}>Create Account</button>
-        </form>
+    return (
+        <div>
+            <div className="signup-container">
+                <div className="signup-card">
+                    <h2>Sign Up</h2>
 
-        <p className="login-text">
-          Already have an account? <span>Login</span>
-        </p>
-      </div>
-    </div>
-    </div>
-  )
+                    <form onSubmit={handleSubmit}>
+                        <input type="text" placeholder="Full Name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)} />
+                        <input type="email" placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Confirm Password" />
+
+                        <button type="submit">Create Account</button>
+                    </form>
+
+                    <p className="login-text">
+                        Already have an account? <span>Login</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Signup
