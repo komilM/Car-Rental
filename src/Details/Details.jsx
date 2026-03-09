@@ -13,9 +13,9 @@ const Details = () => {
     const name = location.state?.name;
     const email = location.state?.email;
 
-    // useEffect(() => {
-    //     alert("Account created")
-    // }, [])
+    useEffect(() => {
+        alert("Account created")
+    }, [])
 
     return (
         <div className='body'>
