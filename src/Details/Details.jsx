@@ -45,8 +45,8 @@ const Details = () => {
             {/* Nav */}
 
             <h1 style={{ textAlign: "center", fontSize: "80px", fontWeight: "700", marginTop: "100px" }}>Car rented for</h1>
-            <h2 style={{ fontSize: "35px", fontWeight: "600", marginTop: "35px" }}>Name: {name}</h2>
-            <h3 style={{ fontSize: "28px", fontWeight: "600", marginTop: "35px" }}> Email:  {email}</h3>
+            <h2 style={{ textAlign: "center", fontSize: "35px", fontWeight: "600", marginTop: "35px" }}>Name: {name}</h2>
+            <h3 style={{ textAlign: "center", fontSize: "28px", fontWeight: "600", marginTop: "35px" }}> Email:  {email}</h3>
 
         </div>
     )
